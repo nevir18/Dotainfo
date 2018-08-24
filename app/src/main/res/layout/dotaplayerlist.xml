@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#222222"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp" />
+
+            <TextView
+                android:id="@+id/accountid1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image"
+                android:paddingLeft="3dp"
+                android:text="AccountId:"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/accountid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/accountid1"
+                android:text="Accountid"
+                android:textColor="#ffffff"                />
+
+            <TextView
+                android:id="@+id/steamid1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/accountid1"
+                android:layout_toRightOf="@+id/image"
+                android:paddingLeft="3dp"
+                android:text="SteamId:"
+                android:textColor="#ffffff"                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/steamid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/accountid"
+                android:layout_toEndOf="@+id/steamid1"
+                android:text="Steamid"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/profileurl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/steamid1"
+                android:layout_toRightOf="@+id/image"
+                android:paddingLeft="3dp"
+                android:text="ProfileUrl:"
+                android:textColor="#ffffff"
+                android:autoLink="web"
+                android:clickable="true"
+                android:linksClickable="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profileurl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/steamid"
+                android:layout_toEndOf="@+id/profileurl1"
+                android:text="profileurl"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/personaname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profileurl"
+                android:layout_toRightOf="@+id/image"
+                android:paddingLeft="3dp"
+                android:text="PersonaName:"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/personaname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profileurl"
+                android:layout_toEndOf="@+id/personaname1"
+                android:text="personaname"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/loccountrycode1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/personaname1"
+                android:layout_toRightOf="@+id/image"
+                android:paddingLeft="3dp"
+                android:text="LocCountryCode:"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/loccountrycode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/personaname"
+                android:layout_toEndOf="@+id/loccountrycode1"
+                android:text="loccountrycode"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loccountrycode1"
+                android:layout_toRightOf="@+id/image"
+                android:paddingLeft="3dp"
+                android:text="Name:"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loccountrycode"
+                android:layout_toEndOf="@+id/name1"
+                android:text="name"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/teamname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_toRightOf="@+id/image"
+                android:paddingLeft="3dp"
+                android:text="TeamName:"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/teamname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_toEndOf="@+id/teamname1"
+                android:text="teamname"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/ispro1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teamname1"
+                android:layout_toRightOf="@+id/image"
+                android:paddingLeft="3dp"
+                android:text="IsPro:"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ispro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teamname"
+                android:layout_toEndOf="@+id/ispro1"
+                android:text="ispro"
+                android:textColor="#ffffff" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

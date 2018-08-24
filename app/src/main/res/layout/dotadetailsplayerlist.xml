@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/backgroundlogo"
+    android:background="#333333">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000">
+
+
+        <ImageView
+            android:id="@+id/champion"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/direlogo" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/champion"
+            android:text="Name"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/kda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/champion"
+            android:text="KDA"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/champion"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="Gold"
+            android:textColor="#ffffff" />
+
+
+        <ImageView
+            android:id="@+id/isradiant"
+            android:layout_width="50dp"
+            android:layout_height="41dp"
+            android:layout_alignTop="@+id/kda"
+            android:layout_marginLeft="280dp"
+            app:srcCompat="@drawable/radiantlogo" />
+
+    </RelativeLayout>
+</RelativeLayout>
